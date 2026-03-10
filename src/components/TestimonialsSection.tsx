@@ -23,8 +23,8 @@ const TestimonialsSection = () => {
           <div className="bg-slate-50 border border-slate-100 rounded-[2rem] px-6 md:px-10 py-12 shadow-sm">
 
             {/* Heading */}
-            <h2 className="text-2xl md:text-4xl font-black text-center mb-4 text-slate-900 leading-tight">
-             Padhiye Firsthand From Our Clients About Their Journey <span className="text-[#0047AB]">To A Pain-Free Life</span> 
+<h2 className="text-2xl md:text-4xl font-black text-center mb-4 text-slate-900 leading-tight">
+             Humaare Clients Se Khud Suniye
             </h2>
 
             {/* Google Rating - Clean white style */}

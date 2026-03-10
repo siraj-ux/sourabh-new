@@ -32,7 +32,7 @@ const PainPointsSection = () => {
           {/* Headline */}
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-black text-slate-900 leading-tight mb-4">
-              Kya Aap Bhi Head, Shoulders, Knees Ya Heels Pain Se Jujha <span className="text-[#0047AB]">Rahe Hai ?</span>
+Kya Aap Bhi Head, Shoulders, Knees Ya Heels Pain Se Jujh <span className="text-[#0047AB]">Rahe Hai ?</span>
             </h2>
 
             {/* NEW HIGHLIGHTED TEXT */}

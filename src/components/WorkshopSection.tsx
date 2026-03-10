@@ -5,27 +5,27 @@ import { Check } from "lucide-react";
 
 const WorkshopSection = () => {
   const phases = [
-    {
+{
       title: "Identify",
-      text: "Ascertain the Root cause.",
+      text: "Root cause ko identify karenge",
       gradient: "from-blue-600 to-blue-400",
       accent: "bg-blue-300",
     },
     {
       title: "Release",
-      text: "Release trigger points, restore movement aur eliminate muscle pain.",
+      text: "Trigger points release karenge aur movement ko restore karenge",
       gradient: "from-amber-500 to-orange-400",
       accent: "bg-amber-300",
     },
     {
       title: "Strengthen",
-      text: "Regain functional strength in weak muscles.",
+      text: "aapke kamzor muscles mein phir taakat layenge",
       gradient: "from-emerald-600 to-teal-400",
       accent: "bg-emerald-300",
     },
     {
       title: "Restore",
-      text: "Restore joint range of motion and muscle flexibility",
+      text: "Aapke muscle flexibility aur joint range of motion ko restore karenge",
       gradient: "from-indigo-600 to-violet-400",
       accent: "bg-indigo-300",
     },
@@ -58,7 +58,7 @@ const WorkshopSection = () => {
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
-              Pain Free Life With FM4 <span className="text-[#0047AB]">Live Workshop</span>
+Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
             </h2>
             <p className="text-slate-500 text-base md:text-lg leading-relaxed">
               Transform Chronic Pain Into Freedom Of Movement By Discovering One Of Its Kind{" "}

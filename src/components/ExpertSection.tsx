@@ -82,11 +82,20 @@ const ExpertSection = () => {
 
               {/* BIO TEXT CONTENT */}
               <div className="order-2 md:order-1">
+<p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
+                  Sourobh Kulkorni, one of the India’s leading Health & Wellness professional practicing in Pune, boasts several Fellowships and experience garnered internationally as well as in India. 
+                </p>
                 <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
-                  Main Sourobh Kulkorni hoon, FM4 Therapy ka founder aur India ki only government-patented, 4-phase pain relief system ka creator. Certified Health Care Professional, Nutritionist, aur Rehabilitation Specialist hoon.
+                  He holds multiple degrees and certifications in fitness and wellness as well as in rehab, demonstrating his extensive expertise in the field.
+                </p>
+                <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
+                  He has been recognized and lauded with amazing performer award in Fitness and wellness industry for the year 2024-2025.
                 </p>
                 <p className="text-slate-600 mb-6 text-sm md:text-base font-medium leading-relaxed">
-                  FM4 Therapy government-patented hai, India mein scientifically validated 4-phase treatment hai jo spine, knee, aur neck pain ki root causes ko target karta hai.
+                  With his healing touch, expert hands and skill that have been honed by over 19 plus years of experience, Sourobh Kulkorni practices self-pioneered FM4 therapy treatments for varied types of musculoskeletal disorders and has successfully reversed chronic and acute musculoskeletal disorders of more than 10,000 plus patients, of varied age groups. 
+                </p>
+                <p className="text-slate-600 mb-6 text-sm md:text-base font-medium leading-relaxed">
+                  Sourabh pioneered the development of a comprehensive therapy, called FM4 Therapy, that allows complete recovery from the painful condition without any medications or surgical intervention.
                 </p>
 
                 <div className="bg-[#0047AB] rounded-xl p-4 mb-6 shadow-lg">
