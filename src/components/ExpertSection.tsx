@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Check, ArrowRight } from "lucide-react"; 
+import { Check, ArrowRight } from "lucide-react";
 import celebrity1 from "@/assets/celebrity-1.webp";
 import celebrity2 from "@/assets/celebrity-2.webp";
 import celebrity3 from "@/assets/celebrity-3.webp";
@@ -41,12 +41,11 @@ const ExpertSection = () => {
               Meet Your Expert
             </p>
             <h2 className="text-2xl md:text-4xl font-black text-center mb-8 md:mb-12 text-slate-900">
-              Hi, Main <span className="text-[#0047AB]">Sourobh Kulkorni</span>
+              Hi, I'm <span className="text-[#0047AB]">Sourobh Kulkorni</span>
             </h2>
 
             {/* --- BIO & GALLERY GRID --- */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-16">
-              
               {/* PHOTO GALLERY (Shows after heading on mobile) */}
               <div className="order-1 md:order-2">
                 <div
@@ -67,7 +66,6 @@ const ExpertSection = () => {
                     </div>
                   ))}
                 </div>
-
                 <div className="flex justify-center gap-2 mt-2">
                   {images.map((_, i) => (
                     <div
@@ -82,20 +80,23 @@ const ExpertSection = () => {
 
               {/* BIO TEXT CONTENT */}
               <div className="order-2 md:order-1">
-<p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
-                  Sourobh Kulkorni, one of the India’s leading Health & Wellness professional practicing in Pune, boasts several Fellowships and experience garnered internationally as well as in India. 
+                <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
+                  Sourobh Kulkorni, one of the India’s leading Health & Wellness professional practicing in Pune, boasts several Fellowships and experience garnered internationally as well as in India.
                 </p>
                 <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
                   He holds multiple degrees and certifications in fitness and wellness as well as in rehab, demonstrating his extensive expertise in the field.
                 </p>
-                <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
+                
+                {/* HIGHLIGHTED SENTENCE */}
+                <p className="mb-4 text-sm md:text-base leading-relaxed bg-blue-50 border-l-4 border-[#0047AB] p-3 rounded-r-lg font-bold text-slate-800">
                   He has been recognized and lauded with amazing performer award in Fitness and wellness industry for the year 2024-2025.
                 </p>
+
                 <p className="text-slate-600 mb-6 text-sm md:text-base font-medium leading-relaxed">
-                  With his healing touch, expert hands and skill that have been honed by over 19 plus years of experience, Sourobh Kulkorni practices self-pioneered FM4 therapy treatments for varied types of musculoskeletal disorders and has successfully reversed chronic and acute musculoskeletal disorders of more than 10,000 plus patients, of varied age groups. 
+                  With his healing touch, expert hands and skill that have been honed by over 19 plus years of experience, Sourobh Kulkorni practices self-pioneered FM4 therapy treatments for varied types of musculoskeletal disorders and has successfully reversed chronic and acute musculoskeletal disorders of more than 10,000 plus patients, of varied age groups.
                 </p>
                 <p className="text-slate-600 mb-6 text-sm md:text-base font-medium leading-relaxed">
-                  Sourabh pioneered the development of a comprehensive therapy, called FM4 Therapy, that allows complete recovery from the painful condition without any medications or surgical intervention.
+                  Sourobh pioneered the development of a comprehensive therapy, called FM4 Therapy, that allows complete recovery from the painful condition without any medications or surgical intervention.
                 </p>
 
                 <div className="bg-[#0047AB] rounded-xl p-4 mb-6 shadow-lg">
@@ -120,12 +121,11 @@ const ExpertSection = () => {
               </div>
             </div>
 
-            {/* --- SEPARATE APPROACH SECTION (Camel Case Heading) --- */}
+            {/* --- SEPARATE APPROACH SECTION --- */}
             <div className="border-t border-slate-200 pt-12 mt-4">
               <h3 className="text-2xl md:text-3xl font-black text-center mb-10 text-slate-900 tracking-tight px-4 leading-tight">
                 Sourobh Ka Approach <span className="text-[#0047AB]">Kaam Kyun Karta Hai?</span>
               </h3>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto px-2">
                 {[
                   "Aapke body mein actual mechanical breakdown identify karna",
@@ -133,7 +133,10 @@ const ExpertSection = () => {
                   "Weak support systems strengthen karna",
                   "Natural movement patterns restore karna",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                  <div
+                    key={i}
+                    className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+                  >
                     <div className="bg-blue-100 p-2.5 rounded-full flex-shrink-0">
                       <ArrowRight className="text-[#0047AB] w-5 h-5" />
                     </div>
@@ -144,7 +147,6 @@ const ExpertSection = () => {
                 ))}
               </div>
             </div>
-
           </AnimatedSection>
         </div>
       </div>
