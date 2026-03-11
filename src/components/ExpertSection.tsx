@@ -3,6 +3,7 @@ import { Check, ArrowRight } from "lucide-react";
 import celebrity1 from "@/assets/celebrity-1.webp";
 import celebrity2 from "@/assets/celebrity-2.webp";
 import celebrity3 from "@/assets/celebrity-3.webp";
+import bonusImage from "@/assets/bonus-image.jpeg";
 import AnimatedSection from "./AnimatedSection";
 
 const ExpertSection = () => {
@@ -81,7 +82,7 @@ const ExpertSection = () => {
               {/* BIO TEXT CONTENT */}
               <div className="order-2 md:order-1">
                 <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
-                  Sourobh Kulkorni is one of India’s leading Health & Wellness professionals practicing in Pune, boasting several Fellowships and extensive international and domestic experience.
+                  Sourobh Kulkorni is one of India's leading Health & Wellness professionals practicing in Pune, boasting several Fellowships and extensive international and domestic experience.
                 </p>
                 <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
                   He holds multiple degrees and certifications in fitness, wellness, and rehabilitation, demonstrating his deep expertise in the field.
@@ -121,8 +122,21 @@ const ExpertSection = () => {
               </div>
             </div>
 
+            {/* --- BONUS BANNER IMAGE SECTION --- */}
+            <div className="border-t border-slate-200 pt-12 mt-4 mb-12">
+              <div className="max-w-3xl mx-auto">
+                <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-white max-h-80 md:max-h-[32rem] lg:max-h-[36rem]">
+                  <img
+                    src={bonusImage}
+                    alt="Bonus Banner"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
             {/* --- SEPARATE APPROACH SECTION --- */}
-            <div className="border-t border-slate-200 pt-12 mt-4">
+            <div className="border-t border-slate-200 pt-12">
               <h3 className="text-2xl md:text-3xl font-black text-center mb-10 text-slate-900 tracking-tight px-4 leading-tight">
                 Why Does Sourobh's <span className="text-[#0047AB]">Approach Work?</span>
               </h3>
