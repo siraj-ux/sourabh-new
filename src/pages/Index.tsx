@@ -33,9 +33,9 @@ const Index = () => {
       {/* Social Proof (The 10,000+ Stats) */}
       <SocialProofSection />
 
-       
+        <VideoReviewsSection/>
       <WorkshopSectionOne />
-      <VideoReviewsSection/>
+     
        <TreatmentFailureSection />
        <FM4MethodSection />
        <WorkshopLearningSection />
