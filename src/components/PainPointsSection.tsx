@@ -3,18 +3,18 @@ import AnimatedSection from "./AnimatedSection";
 import { Check } from "lucide-react";
 
 const painPoints = [
-  "Aapne painkillers try kiye, kuch ghanton ke liye kaam karte hain, phir pain wapas aa jata hai",
-  "Aapne physiotherapy karwayi, temporarily help karti hai, lekin last nahi karti",
-  "Aapne massage karwaye, us waqt achha lagta hai, pain wapas aa jata hai",
-  "Apne lakhon rupiya kharch kiya treatments par, phir bhi pain barkarar hai?",
-  'Doctors kehte hain "it\'s age" ya "iske saath jeena seekho"',
-  "Doctors kehte hain surgery hi ek matra solution hai.",
+  "You tried painkillers — they work for a few hours, but the pain comes back again.",
+  "You tried physiotherapy — it helps temporarily, but the relief doesn’t last.",
+  "You tried massages — it feels good at the moment, but the pain returns again.",
+  "You spent lakhs of rupees on treatments, yet the pain still continues.",
+  'Doctors say "It\'s because of age" or "You have to learn to live with it."',
+  "Some doctors say surgery is the only solution left.",
 ];
 
 const PainPointsSection = () => {
-  const [checked, setChecked] = useState<boolean[]>(new Array(painPoints.length).fill(false));
+  const [checked, setChecked] = useState(new Array(painPoints.length).fill(false));
   
-  const toggle = (i: number) => {
+  const toggle = (i) => {
     setChecked(prev => { 
       const next = [...prev]; 
       next[i] = !next[i]; 
@@ -32,13 +32,13 @@ const PainPointsSection = () => {
           {/* Headline */}
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-black text-slate-900 leading-tight mb-4">
-Kya Aap Bhi Head, Shoulders, Knees Ya Heels Pain Se Jujh <span className="text-[#0047AB]">Rahe Hai ?</span>
+              Are You Also Struggling With Head, Shoulder, Knee or <span className="text-[#0047AB]">Heel Pain?</span>
             </h2>
 
-            {/* NEW HIGHLIGHTED TEXT */}
+            {/* Sub-headline Instruction */}
             <div className="bg-yellow-100 border border-yellow-200 px-4 py-2 rounded-lg inline-block shadow-sm">
               <p className="text-sm md:text-base text-slate-900 font-black">
-                Neeche Click Karke Share Karein Ki Aap Kis Type Ka Pain Face Kar Rahe Hain:
+                Click below and tell us what type of pain you are experiencing:
               </p>
             </div>
           </div>
@@ -78,16 +78,16 @@ Kya Aap Bhi Head, Shoulders, Knees Ya Heels Pain Se Jujh <span className="text-[
             ))}
           </div>
 
-          {/* Result Feedback: Shows only if users interact */}
-          {count >= 2 && (
+          {/* Result Feedback */}
+          {count >= 1 && (
             <div className="mt-10 bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center animate-in fade-in zoom-in duration-300">
               <p className="text-base md:text-lg font-bold text-slate-900">
-                Aapne {count} boxes check kiye hain...
+                You have checked {count} {count === 1 ? 'box' : 'boxes'}...
               </p>
               <p className="text-slate-600 text-sm mt-2 max-w-md mx-auto">
-                Pain ke saath jeena normal nahi hai. <br />
+                Living with pain is not normal. <br />
                 <span className="text-[#0047AB] font-bold underline decoration-2 underline-offset-4">
-                  Aapko is therapy ki zarurat hai.
+                  You need this therapy to restore your quality of life.
                 </span>
               </p>
             </div>

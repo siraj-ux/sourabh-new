@@ -46,7 +46,7 @@ const ExpertSection = () => {
 
             {/* --- BIO & GALLERY GRID --- */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-16">
-              {/* PHOTO GALLERY (Shows after heading on mobile) */}
+              {/* PHOTO GALLERY */}
               <div className="order-1 md:order-2">
                 <div
                   ref={scrollRef}
@@ -81,22 +81,22 @@ const ExpertSection = () => {
               {/* BIO TEXT CONTENT */}
               <div className="order-2 md:order-1">
                 <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
-                  Sourobh Kulkorni, one of the India’s leading Health & Wellness professional practicing in Pune, boasts several Fellowships and experience garnered internationally as well as in India.
+                  Sourobh Kulkorni is one of India’s leading Health & Wellness professionals practicing in Pune, boasting several Fellowships and extensive international and domestic experience.
                 </p>
                 <p className="text-slate-600 mb-4 text-sm md:text-base font-medium leading-relaxed">
-                  He holds multiple degrees and certifications in fitness and wellness as well as in rehab, demonstrating his extensive expertise in the field.
+                  He holds multiple degrees and certifications in fitness, wellness, and rehabilitation, demonstrating his deep expertise in the field.
                 </p>
                 
                 {/* HIGHLIGHTED SENTENCE */}
                 <p className="mb-4 text-sm md:text-base leading-relaxed bg-blue-50 border-l-4 border-[#0047AB] p-3 rounded-r-lg font-bold text-slate-800">
-                  He has been recognized and lauded with amazing performer award in Fitness and wellness industry for the year 2024-2025.
+                  He was recently recognized with the "Amazing Performer Award" in the Fitness and Wellness industry for 2024-2025.
                 </p>
 
                 <p className="text-slate-600 mb-6 text-sm md:text-base font-medium leading-relaxed">
-                  With his healing touch, expert hands and skill that have been honed by over 19 plus years of experience, Sourobh Kulkorni practices self-pioneered FM4 therapy treatments for varied types of musculoskeletal disorders and has successfully reversed chronic and acute musculoskeletal disorders of more than 10,000 plus patients, of varied age groups.
+                  With over 19 years of experience, Sourobh practices his self-pioneered FM4 therapy for various musculoskeletal disorders. He has successfully reversed chronic and acute conditions for over 10,000+ patients across all age groups.
                 </p>
                 <p className="text-slate-600 mb-6 text-sm md:text-base font-medium leading-relaxed">
-                  Sourobh pioneered the development of a comprehensive therapy, called FM4 Therapy, that allows complete recovery from the painful condition without any medications or surgical intervention.
+                  Sourobh pioneered the development of FM4 Therapy to allow complete recovery from painful conditions without any medications or surgical intervention.
                 </p>
 
                 <div className="bg-[#0047AB] rounded-xl p-4 mb-6 shadow-lg">
@@ -107,10 +107,10 @@ const ExpertSection = () => {
 
                 <div className="space-y-3">
                   {[
-                    "30,000+ clients ne chronic pain overcome kiya",
-                    "5,000+ surgeries avoid ki",
-                    "₹100+ crores medical bills mein bachaye",
-                    "Government-patented FM4 Therapy",
+                    "30,000+ clients helped to overcome chronic pain",
+                    "Over 5,000 unnecessary surgeries avoided",
+                    "Saved ₹100+ crores in medical bills for patients",
+                    "Government-patented FM4 Therapy framework",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <Check className="text-green-500 w-4 h-4 mt-0.5 flex-shrink-0 stroke-[3px]" />
@@ -124,14 +124,14 @@ const ExpertSection = () => {
             {/* --- SEPARATE APPROACH SECTION --- */}
             <div className="border-t border-slate-200 pt-12 mt-4">
               <h3 className="text-2xl md:text-3xl font-black text-center mb-10 text-slate-900 tracking-tight px-4 leading-tight">
-                Sourobh Ka Approach <span className="text-[#0047AB]">Kaam Kyun Karta Hai?</span>
+                Why Does Sourobh's <span className="text-[#0047AB]">Approach Work?</span>
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto px-2">
                 {[
-                  "Aapke body mein actual mechanical breakdown identify karna",
-                  "Muscle tension aur nerve pressure release karna",
-                  "Weak support systems strengthen karna",
-                  "Natural movement patterns restore karna",
+                  "Identifies actual mechanical breakdowns in your body",
+                  "Releases deep muscle tension and nerve pressure",
+                  "Strengthens the body's weak support systems",
+                  "Restores natural and efficient movement patterns",
                 ].map((item, i) => (
                   <div
                     key={i}

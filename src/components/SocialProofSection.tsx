@@ -34,7 +34,7 @@ const SocialProofSection = () => {
         {/* HEADER - Smaller font sizes */}
         <div className="text-center mb-6 md:mb-10">
           <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-tight">
-            <span className="text-[#0047AB]">FM4 Therapy Ke Results</span>
+            <span className="text-[#0047AB]">FM4 Therapy Results</span>
           </h2>
         </div>
 

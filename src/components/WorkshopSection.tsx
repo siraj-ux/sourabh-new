@@ -5,27 +5,27 @@ import { Check } from "lucide-react";
 
 const WorkshopSection = () => {
   const phases = [
-{
+    {
       title: "Identify",
-      text: "Root cause ko identify karenge",
+      text: "Pinpoint the exact mechanical root cause of your chronic pain.",
       gradient: "from-blue-600 to-blue-400",
       accent: "bg-blue-300",
     },
     {
       title: "Release",
-      text: "Trigger points release karenge aur movement ko restore karenge",
+      text: "Release deep-seated trigger points and restore fluid movement.",
       gradient: "from-amber-500 to-orange-400",
       accent: "bg-amber-300",
     },
     {
       title: "Strengthen",
-      text: "aapke kamzor muscles mein phir taakat layenge",
+      text: "Rebuild strength and stability in your weakened muscle groups.",
       gradient: "from-emerald-600 to-teal-400",
       accent: "bg-emerald-300",
     },
     {
       title: "Restore",
-      text: "Aapke muscle flexibility aur joint range of motion ko restore karenge",
+      text: "Regain full muscle flexibility and optimize joint range of motion.",
       gradient: "from-indigo-600 to-violet-400",
       accent: "bg-indigo-300",
     },
@@ -33,19 +33,19 @@ const WorkshopSection = () => {
 
   const practicalApps = [
     {
-      title: "Morning stiffness prevent karna",
+      title: "Morning Stiffness: Effective techniques to prevent early-day pain",
       img: "/sk/4.jpg",
     },
     {
-      title: "Work ergonomics ko reorganize karke pain-free work ke liye",
+      title: "Work Ergonomics: Reorganizing your workspace for a pain-free life",
       img: "/sk/5.jpg",
     },
     {
-      title: "Sleep right, recover faster—optimize recovery with proper sleep positions",
+      title: "Sleep Optimization: Recover faster with proper sleeping positions",
       img: "/sk/6.jpg",
     },
     {
-      title: "Simple lifestyle modifications for lasting pain relief and better mobility",
+      title: "Lifestyle Design: Simple modifications for long-term mobility",
       img: "/sk/7.jpg",
     },
   ];
@@ -54,18 +54,18 @@ const WorkshopSection = () => {
     <section className="bg-white py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto space-y-16 md:space-y-24">
         
-        {/* ===== TOP INTRO BLOCK ===== */}
+        {/* ===== TOP INTRO BLOCK - Refined English Headlines ===== */}
         <AnimatedSection>
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
-Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
+              Eliminate Chronic Pain <span className="text-[#0047AB]">With FM4 Therapy</span>
             </h2>
-            <p className="text-slate-500 text-base md:text-lg leading-relaxed">
-              Transform Chronic Pain Into Freedom Of Movement By Discovering One Of Its Kind{" "}
+            <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+              Transform your life and reclaim your freedom of movement with our scientifically-backed, one-of-a-kind{" "}
               <span className="relative inline-block px-1">
                 <span className="absolute inset-0 bg-[#0047AB]/10 rounded"></span>
-                <span className="relative text-[#0047AB]">
-                  FM4 Therapy
+                <span className="relative text-[#0047AB] font-bold">
+                  FM4 Therapy System
                 </span>
               </span>
             </p>
@@ -81,28 +81,28 @@ Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
             <div className="flex flex-col md:flex-row gap-6">
               <DayCard 
                 day="Day 01" 
-                title="Dard Ka Asli Sabab Samjhiye" 
+                title="Identify The Root Cause" 
                 points={[
-                  "Find out kare true origin of your pain and unlock a path to long-term recovery",
-                  "Janiye body mai overactive muscles aur functional movement deficiencies",
-                  "Pehle ke treatments fail hone ke reasons",
-                  "Uncover kare potential risk factors for future musculoskeletal disorders."
+                  "Discover the true origin of your pain and map out your recovery path.",
+                  "Identify overactive muscles and functional movement deficiencies.",
+                  "Learn exactly why traditional treatments often fail to provide lasting relief.",
+                  "Assess potential risk factors for future musculoskeletal issues."
                 ]}
               />
               <DayCard 
                 day="Day 02" 
-                title="Unveil FM4 Therapy" 
+                title="Master The FM4 Framework" 
                 points={[
-                  "Evidence based 4-phase therapy approach",
-                  "Scientifically grounded FM4 therapy for targeted and lasting musculoskeletal relief.",
-                  "30,000+ patients recovered"
+                  "Deep dive into the evidence-based 4-phase therapy approach.",
+                  "Learn scientifically grounded techniques for targeted relief.",
+                  "Case studies and insights from over 30,000+ successful recoveries."
                 ]}
               />
             </div>
           </div>
         </AnimatedSection>
 
-        {/* ===== CURRICULUM SECTION (COMPACT COLORFUL DESIGN) ===== */}
+        {/* ===== CURRICULUM SECTION ===== */}
         <AnimatedSection>
           <div className="space-y-10 relative">
             <div className="text-center">
@@ -110,7 +110,7 @@ Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
                 Workshop Curriculum
               </h3>
               <p className="text-blue-600 font-black uppercase tracking-[0.2em] text-[10px] md:text-xs">
-                The 4-Step FM4 Recovery Framework
+                The 4-Step FM4 Recovery Protocol
               </p>
             </div>
 
@@ -121,22 +121,18 @@ Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
                   whileHover={{ y: -8, scale: 1.02 }}
                   className={`relative group bg-gradient-to-br ${phase.gradient} rounded-[2rem] p-6 shadow-xl transition-all duration-500 overflow-hidden flex flex-col min-h-[220px]`}
                 >
-                  {/* GRAPHIC DECOR 1: Smaller Ghost Number */}
                   <span className="absolute -bottom-2 -left-2 text-7xl font-black text-white/10 select-none pointer-events-none italic group-hover:scale-110 transition-transform duration-700">
                     0{i + 1}
                   </span>
 
-                  {/* GRAPHIC DECOR 2: Glass Morphism Blurred Circles */}
                   <div className="absolute top-[-15%] right-[-15%] w-24 h-24 bg-white/20 rounded-full blur-xl pointer-events-none" />
 
-                  {/* Header Badge */}
                   <div className="relative z-10 mb-4">
                     <div className="w-9 h-9 bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-xl flex items-center justify-center font-black text-base shadow-lg group-hover:bg-white group-hover:text-slate-900 transition-colors duration-300">
                       {i + 1}
                     </div>
                   </div>
 
-                  {/* Text Contents */}
                   <div className="relative z-10 flex-grow">
                     <h4 className="text-white font-black text-lg mb-2 leading-tight tracking-tight">
                       Phase {i + 1}: <br />
@@ -147,7 +143,6 @@ Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
                     </p>
                   </div>
 
-                  {/* Minimal Status Bar at bottom */}
                   <div className="relative z-10 mt-4">
                     <div className="h-1 w-full bg-black/10 rounded-full overflow-hidden">
                       <div 
@@ -167,9 +162,9 @@ Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
           <div className="bg-slate-50 rounded-[3rem] p-8 md:p-16 border border-slate-100 shadow-sm">
             <div className="text-center mb-12">
               <h4 className="text-[#0047AB] font-black text-2xl md:text-4xl mb-4 tracking-tight">
-                Plus: Practical Applications
+                Bonus: Practical Applications
               </h4>
-              <p className="text-slate-500 font-medium">Real-world strategies you can start using immediately</p>
+              <p className="text-slate-500 font-medium">Immediate real-world strategies for lasting mobility</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -205,7 +200,6 @@ Dard Ko Kahe Alvida <span className="text-[#0047AB]">FM4 Therapy Ke Saath</span>
   );
 };
 
-// Internal Helper Components
 const DayCard = ({ day, title, points }) => (
   <div className="flex-1 w-full rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-xl flex flex-col bg-white">
     <div className="bg-[#0047AB] p-6 md:p-8 text-white">

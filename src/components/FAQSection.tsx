@@ -1,17 +1,44 @@
 import { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
-import { Plus } from "lucide-react"; // Optional: Added for a cleaner icon look
+import { Plus } from "lucide-react";
 
 const faqs = [
-  { q: "Kya aap severe conditions ke liye complete pain relief ki guarantee de sakte hain?", a: "Jabki humari 30,000+ success rate hai, results aapki specific condition, consistency, aur commitment pe depend karte hain. Hum honest assessments aur realistic timelines provide karte hain." },
-  { q: "FM4 Therapy exactly kya hai?", a: "FM4 ek proven 4-phase treatment hai jo spine, neck, aur knees mein pain ki root causes ko target karta hai. Ismein shamil hai: Cause identify karna, Muscle tension release karna, Weak muscles strengthen karna, Flexibility improve karna." },
-  { q: "Yeh workshop kaise deliver hota hai?", a: "Yeh ek LIVE online workshop hai jo 2 days mein video conference ke through conduct hota hai. Aapko stable internet connection aur ek device chahiye hoga." },
-  { q: "Kya mujhe koi special equipment chahiye?", a: "Nahi! Workshop mein jo bhi demonstrate hoga woh zero equipment ke saath kiya ja sakta hai." },
-  { q: "FM4 physiotherapy ya chiropractic se kaise alag hai?", a: "Traditional treatments aksar pain location pe focus karte hain. FM4 Therapy compensatory patterns identify karti hai—kyun ek weak muscle dusre muscles ko overwork karne pe majboor karta hai." },
-  { q: "Kya yeh elderly logon ke liye suitable hai?", a: "Bilkul! Humne 60-80+ age ke patients ko successfully treat kiya hai. Techniques gentle aur safe hain." },
-  { q: "Purani injuries ke liye kaam karega ya sirf recent pain ke liye?", a: "FM4 Therapy acute aur chronic dono conditions ke liye kaam karti hai. Humari kai success stories aise pain ki hain jinke saath patients 10-20+ saal se jee rahe the." },
-  { q: "Workshop ke baad kya hota hai?", a: "Aapko ghar pe continue karne ke liye actionable techniques milenge, ongoing practice ke liye resources, aur extended FM4 Therapy programs ke baare mein information." },
-  { q: "Kya koi refund policy hai?", a: "Is workshop ki deeply discounted nature ki wajah se, sabhi sales final hain. Lekin hum value mein confident hain—30,000+ logon ne hum pe bharosa kiya hai." },
+  { 
+    q: "Can you guarantee complete pain relief for severe conditions?", 
+    a: "While we have a 30,000+ success rate, results depend on your specific condition, consistency, and commitment. We provide honest assessments and realistic timelines to ensure you get the best possible outcome." 
+  },
+  { 
+    q: "What exactly is FM4 Therapy?", 
+    a: "FM4 is a proven 4-phase treatment that targets the root causes of pain in the spine, neck, and knees. It includes: Identifying the root cause, Releasing muscle tension, Strengthening weak muscles, and Improving long-term flexibility." 
+  },
+  { 
+    q: "How is this workshop delivered?", 
+    a: "This is a LIVE online workshop conducted over 2 days via video conferencing. All you need is a stable internet connection and a smartphone or laptop to join." 
+  },
+  { 
+    q: "Do I need any special equipment?", 
+    a: "Not at all! Everything demonstrated in the workshop is designed to be performed at home with zero equipment." 
+  },
+  { 
+    q: "How is FM4 different from physiotherapy or chiropractic treatment?", 
+    a: "Traditional treatments often focus only on the location of the pain. FM4 Therapy identifies 'compensatory patterns'—understanding why a weak muscle in one area is forcing other muscles to overwork and cause pain." 
+  },
+  { 
+    q: "Is this suitable for elderly people?", 
+    a: "Absolutely! We have successfully treated many patients in the 60-80+ age group. The techniques are gentle, low-impact, and completely safe for seniors." 
+  },
+  { 
+    q: "Does it work for old injuries or only recent pain?", 
+    a: "FM4 Therapy works for both acute and chronic conditions. We have many success stories from patients who had been living with chronic pain for over 10-20 years." 
+  },
+  { 
+    q: "What happens after the workshop?", 
+    a: "You will receive actionable techniques to continue practicing at home, access to resources for ongoing recovery, and information regarding our extended FM4 Therapy programs." 
+  },
+  { 
+    q: "Is there a refund policy?", 
+    a: "Due to the deeply discounted nature of this workshop, all sales are final. However, we are extremely confident in the value provided—over 30,000 people have already trusted and benefited from this system." 
+  },
 ];
 
 const FAQSection = () => {
@@ -22,11 +49,11 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
 
-          {/* Wrapper - Changed from secondary/30 to slate-50 */}
+          {/* Wrapper - Slate-50 background */}
           <div className="bg-slate-50 border border-slate-100 rounded-[2rem] px-6 md:px-10 py-12 shadow-sm">
 
             <h2 className="text-2xl md:text-4xl font-black text-center mb-10 text-slate-900 leading-tight">
-              Aam Sawaal <span className="text-[#0047AB]">(FAQ)</span>
+              Frequently Asked <span className="text-[#0047AB]">Questions</span>
             </h2>
 
             <div className="space-y-4">
@@ -43,9 +70,9 @@ const FAQSection = () => {
                       {faq.q}
                     </span>
 
-                    {/* Animated Icon - Updated to #0047AB Blue */}
+                    {/* Animated Icon - Blue */}
                     <span
-                      className={`text-[#0047AB] text-2xl flex-shrink-0 transition-transform duration-300 font-light ${
+                      className={`text-[#0047AB] transition-transform duration-300 ${
                         open === i ? "rotate-45" : ""
                       }`}
                     >
@@ -53,7 +80,7 @@ const FAQSection = () => {
                     </span>
                   </button>
 
-                  {/* Logic remains exactly the same for height transition */}
+                  {/* Expandable Content Logic */}
                   <div
                     className={`grid transition-all duration-300 ease-in-out ${
                       open === i
@@ -62,7 +89,6 @@ const FAQSection = () => {
                     }`}
                   >
                     <div className="overflow-hidden px-6 pb-6">
-                      {/* Changed from yellow-600 to a clean professional slate-600 */}
                       <p className="text-slate-600 text-sm md:text-base leading-relaxed font-medium border-t border-slate-50 pt-4">
                         {faq.a}
                       </p>

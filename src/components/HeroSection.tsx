@@ -112,13 +112,13 @@ const HeroSection = () => {
 
         {/* HEADLINE */}
         <h1 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.2] mb-1.5 md:mb-4 px-2">
-          Spine, Knee Aur Neck Pain Se{" "}
-          <span className="text-yellow-400">Lasting Relief</span> Kaise Paayein?
+          Learn How to Overcome & Relieve Spine, Knee & Neck Pain Naturally for{" "}
+          <span className="text-yellow-400">Long-Term Relief</span>
         </h1>
 
         <div className="mb-2 md:mb-6 px-4">
           <p className="text-[11px] md:text-xl font-medium opacity-95 max-w-3xl mx-auto leading-tight md:leading-relaxed">
-            Achieve kare lasting relief from spine, knee and neck pain bina kisi medicines, surgeries, physiotherapy, chiropractic care ya oil massages.
+            Without any Medicines, Surgeries, Physio, Chiro, or Oil Massages
           </p>
         </div>
 
@@ -166,12 +166,21 @@ const HeroSection = () => {
           </div>
 
           {/* BOOK BUTTON */}
-          <Button
-            onClick={handleBooking}
-            className="w-full bg-[#FF8C00] hover:bg-[#e67e00] text-sm md:text-xl font-black py-4 md:py-6 rounded-xl md:rounded-2xl shadow-lg transition-all active:scale-95 mb-1 uppercase"
-          >
-            BOOK NOW — Sirf 41 Seats!
-          </Button>
+          <div className="space-y-3">
+            <Button
+              onClick={handleBooking}
+              className="w-full bg-[#FDB515] hover:bg-[#e6a314] text-gray-900 text-base md:text-2xl font-black py-5 md:py-7 rounded-full shadow-lg transition-all active:scale-95"
+            >
+              Secure Your Seat @ <span className="line-through mx-1">₹499</span> ₹99
+            </Button>
+            
+            <div className="flex items-center justify-center gap-2 text-white text-xs md:text-base font-semibold">
+              <span>🔥</span>
+              <span>Last</span>
+              <span className="bg-green-600 text-white px-2 py-1 rounded-full font-bold">43</span>
+              <span>Seats Left — Booking Closes Once Full!</span>
+            </div>
+          </div>
 
           {/* COUNTDOWN */}
           <div className="flex justify-center items-center gap-4 border-t border-white/10 pt-3">

@@ -16,7 +16,7 @@ const StickyFooter = () => {
     >
       <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
         
-        {/* Left Side: Pricing & Scarcity (Unchanged) */}
+        {/* Left Side: Pricing & Scarcity */}
         <div className="flex flex-col">
           <div className="flex items-center gap-2 mb-0.5">
             <span className="text-xl md:text-2xl font-black text-slate-900 leading-none">
@@ -31,7 +31,7 @@ const StickyFooter = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-red-500"></span>
             </span>
-            Sirf 41 seats bachi hain
+            Last 43 seats left
           </p>
         </div>
 
@@ -50,16 +50,16 @@ const StickyFooter = () => {
               }, 150);
             }}
             className="group flex items-center gap-2 px-6 md:px-8 py-2.5 md:py-3 rounded-full 
-            bg-[#0047AB] text-white font-black text-xs md:text-sm uppercase tracking-tight
+            bg-[#0047AB] text-white font-black text-xs md:text-sm tracking-tight
             shadow-lg shadow-[#0047AB]/20 transition-all duration-300
             hover:scale-[1.03] active:scale-95 hover:bg-[#003580]"
           >
-            <span>Book My Seat</span>
+            <span>Secure Your Seat @ <span className="line-through mx-0.5">₹499</span> ₹99</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </button>
           
           {/* Urgency Text specifically below the button */}
-          <p className="text-[8px] md:text-[10px] text-red-600 font-black uppercase tracking-widest flex items-center gap-1 animate-pulse">
+          <p className="text-[8px] md:text-[10px] text-red-600 font-black tracking-widest flex items-center gap-1 animate-pulse">
             <Clock size={10} className="mb-0.5" /> Bookings Close Today!
           </p>
         </div>
