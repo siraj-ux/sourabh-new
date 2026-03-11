@@ -106,8 +106,8 @@ const HeroSection = () => {
 
         {/* BADGE */}
         <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-3 py-0.5 text-[9px] md:text-sm font-semibold mb-2 md:mb-4">
-          30,000+ Musculoskeletal Cases Recovered. Restoring Movement. Rebuilding Lives.
-          <span className="text-yellow-400"> ⭐ 4.6</span>
+          <span className="block md:inline">30,000+ Musculoskeletal Cases Recovered.</span>
+          <span className="block md:inline"> Restoring Movement. Rebuilding Lives.<span className="text-yellow-400"> ⭐ 4.6</span></span>
         </div>
 
         {/* HEADLINE */}
@@ -134,33 +134,29 @@ const HeroSection = () => {
         {/* BOOKING CARD */}
         <div className="w-full max-w-lg mx-auto bg-white/10 backdrop-blur-xl rounded-[1.5rem] md:rounded-[2rem] p-3 md:p-7 border border-white/10 shadow-2xl">
 
-          <div className="grid grid-cols-2 gap-2 md:gap-4 mb-3 md:mb-5">
-
-            {/* DATE */}
-            <div className="bg-white rounded-lg md:rounded-2xl p-2 md:p-4 border shadow-sm flex items-center gap-2">
-              <Calendar className="w-4 h-4 md:w-6 md:h-6 text-gray-700" />
-              <div className="text-left">
-                <p className="text-[9px] md:text-sm font-bold text-gray-500 uppercase">
-                  Date
-                </p>
-                <p className="text-[11px] md:text-lg font-black text-gray-900">
-                  {formatDateWithSuffix(day1)} <br />
-                  {formatDateWithSuffix(day2)}
-                </p>
-              </div>
-            </div>
-
-            {/* TIME */}
-            <div className="bg-white rounded-lg md:rounded-2xl p-2 md:p-4 border shadow-sm flex items-center gap-2">
-              <Clock className="w-4 h-4 md:w-6 md:h-6 text-gray-700" />
-              <div className="text-left">
-                <p className="text-[9px] md:text-sm font-bold text-gray-500 uppercase">
-                  Time
-                </p>
-                <p className="text-[11px] md:text-lg font-black text-gray-900">
-                  Day 1: {formatTime(day1)} <br />
-                  Day 2: {formatTime(day2)}
-                </p>
+          {/* COMBINED DATE & TIME BOX - COMPACT HORIZONTAL LAYOUT */}
+          <div className="bg-white rounded-lg md:rounded-2xl p-1.5 md:p-4 border shadow-sm mb-3 md:mb-5">
+            <div className="flex items-center gap-1.5 md:gap-2">
+              <Calendar className="w-3.5 h-3.5 md:w-5 md:h-5 text-gray-700 flex-shrink-0" />
+              
+              <div className="flex-1 grid grid-cols-1 gap-1">
+                {/* Day 1 - Horizontal Layout */}
+                <div className="flex items-center gap-1.5 text-left">
+                  <span className="text-[9px] md:text-xs font-bold text-gray-500 uppercase whitespace-nowrap">Day 1:</span>
+                  <span className="text-[9px] md:text-sm font-black text-gray-900">{formatDateWithSuffix(day1)}</span>
+                  <span className="text-gray-300 text-[10px]">•</span>
+                  <Clock className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 text-gray-600" />
+                  <span className="text-[9px] md:text-sm font-black text-gray-900">{formatTime(day1)}</span>
+                </div>
+                
+                {/* Day 2 - Horizontal Layout */}
+                <div className="flex items-center gap-1.5 text-left">
+                  <span className="text-[9px] md:text-xs font-bold text-gray-500 uppercase whitespace-nowrap">Day 2:</span>
+                  <span className="text-[9px] md:text-sm font-black text-gray-900">{formatDateWithSuffix(day2)}</span>
+                  <span className="text-gray-300 text-[10px]">•</span>
+                  <Clock className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 text-gray-600" />
+                  <span className="text-[9px] md:text-sm font-black text-gray-900">{formatTime(day2)}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -174,10 +170,10 @@ const HeroSection = () => {
               Secure Your Seat @ <span className="line-through mx-1">₹499</span> ₹99
             </Button>
             
-            <div className="flex items-center justify-center gap-2 text-white text-xs md:text-base font-semibold">
+            <div className="flex items-center justify-center gap-1 md:gap-2 text-white text-[9px] md:text-base font-semibold flex-wrap">
               <span>🔥</span>
               <span>Last</span>
-              <span className="bg-green-600 text-white px-2 py-1 rounded-full font-bold">43</span>
+              <span className="bg-green-600 text-white px-1.5 md:px-2 py-0.5 md:py-1 rounded-full font-bold">43</span>
               <span>Seats Left — Booking Closes Once Full!</span>
             </div>
           </div>
